@@ -11,3 +11,16 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+.login {
+  background-color: #0F1116 !important;
+}
+.btn-plebitask {
+  background: linear-gradient(270deg, #5431D9 1.45%, #14FAC2 100%) !important;
+}
+.plebitask-input {
+  background-color: #0F1116 !important;
+  color: white !important;
+}
+.plebitask-label {
+  color: #14FAC2 !important;
+}
