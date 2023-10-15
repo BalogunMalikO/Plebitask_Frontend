@@ -1,15 +1,15 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: 'Poppins', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+.font-poppins {
+  font-family: 'Poppins', sans-serif !important;
 }
 .bg-plebitask {
   background-color: #0F1116 !important;
@@ -21,6 +21,7 @@ code {
 }
 .btn-plebitask {
   background: linear-gradient(270deg, #5431D9 1.45%, #14FAC2 100%) !important;
+  text-transform: capitalize !important;
 }
 .plebitask-input {
   background-color: #000000 !important;
@@ -31,6 +32,92 @@ code {
   color: white !important;
   background-size: cover;
 }
+@media screen and (min-width: 992px) {
+  .set-my-page {
+    background-image: url('./assets/set-page.png');
+    color: white !important;
+    background-size: cover;
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    right: 0;
+    left: 0;
+  }
+}
 .text-green {
   color: #12DBAA !important;
+}
+.user {
+  background-color: #0F1116 !important;
+}
+.toolbar {
+  background-color: #05080E !important;
+}
+.fs-7 {
+  font-size: x-small;
+}
+.fs-8 {
+  font-size: xx-small;
+}
+.fs-9 {
+  font-size: 6px;
+}
+.fs-10 {
+  font-size: smaller;
+}
+.btn-yellow {
+  background-color: #FFC727 !important;
+  color: #000000 !important;
+  text-transform: capitalize !important;
+}
+.btn-grey {
+  background-color: #455A64 !important;
+  text-transform: capitalize !important;
+  color: white !important;
+}
+.bg-wallet-balance {
+  background-color: #07183B !important;
+}
+.bg-sidenav {
+  background-color: #1D2331 !important;
+}
+.sidenav-icon-bg {
+  background-color: #181E29 !important;
+}
+.flex-grow {
+  display: flex !important;
+  flex-grow: 1 !important;
+}
+.banner {
+  background-color: #05080E !important;
+}
+.text-capitalize {
+  text-transform: capitalize;
+}
+.task-card {
+  background-color: #111419 !important;
+  border-color: #4A536A !important;
+}
+.bg-light-yellow{
+  background-color: #2C2000;
+}
+.text-yellow {
+  color: #FFC727;
+} 
+.border-yellow {
+  border-color: #FFC727 !important;
+}
+.fw-bold-0 {
+  font-weight: 400;
+}
+.how-card {
+  background-color: #1D2331 !important;
+  /* max-height: 290px;
+  min-height: 290px;
+  overflow: auto; */
+}
+.how-title {
+  background: linear-gradient(270deg, #5431D9 1.45%, #14FAC2 100%) !important;
+  background-clip: text !important;
+  -webkit-text-fill-color: transparent !important;
 }
