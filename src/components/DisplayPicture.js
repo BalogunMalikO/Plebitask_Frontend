@@ -21,30 +21,30 @@ const SetDisplayPicture = ()=>{
                             Set Display Picture
                         </p>
                         <div className='row mx-auto'>
-                            <div className='col-md-3 col-6'>
+                            <div className='col-md-3 col-6 mb-4'>
                                 <div className='border border-white rounded-2 p-2'>
                                     <img alt='display-picture' className='img-fluid' src={FirstPic} />
                                 </div>
                             </div>
-                            <div className='col-md-3 col-6'>
+                            <div className='col-md-3 col-6 mb-4'>
                                 <div className='border border-white rounded-2 p-2'>
                                     <img alt='display-picture' className='img-fluid' src={SecondPic} />
                                 </div>
                             </div>
-                            <div className='col-md-3 col-6'>
+                            <div className='col-md-3 col-6 mb-4'>
                                 <div className='border border-white rounded-2 p-2'>
                                     <img alt='display-picture' className='img-fluid' src={ThirdPic} />
                                 </div>
                             </div>
-                            <div className='col-md-3 col-6'>
+                            <div className='col-md-3 col-6 mb-4'>
                                 <div className='border border-white rounded-2 p-2'>
                                     <img alt='display-picture' className='img-fluid' src={FourthPic} />
                                 </div>
                             </div>
                         </div>                        
                         <div className='d-flex justify-content-center'>
-                            <div className='col-md-8'>                                
-                                <Button className='w-100 py-2 btn-plebitask text-white my-4 fw-bold'>
+                            <div className='col-md-8 col-12'>                                
+                                <Button onClick={()=>navigate('/user/dashboard')} className='w-100 py-2 btn-plebitask text-white my-4 fw-bold'>
                                     NEXT
                                 </Button>
                             </div>

@@ -11,7 +11,7 @@ const SetPage = ()=>{
                         <img  src={NavbarBrand} className="navbar-brand img-fluid"/>
                     </div>
                     <div>
-                        <p>
+                        <p className='d-md-block d-none'>
                             Plebitask Technology  - &copy; 2023  All rights reserved.
                         </p>
                     </div>

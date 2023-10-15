@@ -5,6 +5,9 @@ import { useNavigate } from 'react-router';
 
 const SetDisplayName = ()=>{
     const navigate = useNavigate()
+    const next = ()=>{
+        navigate('/set/display-picture')
+    }
     return (
         <Fragment>
             <div className='py-5'>
@@ -24,7 +27,7 @@ const SetDisplayName = ()=>{
                                 Input Display Name
                             </p>
                             <input className='form-control rounded-0 plebitask-input py-3' />
-                            <Button className='px-4 py-2 btn-plebitask text-white my-4 w-100 fw-bold'>
+                            <Button onClick={next} className='px-4 py-2 btn-plebitask text-white my-4 w-100 fw-bold'>
                                 NEXT
                             </Button>
                         </div>
