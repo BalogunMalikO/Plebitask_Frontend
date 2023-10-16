@@ -107,12 +107,12 @@ const User = ()=>{
                                         <p className='text-white fw-bold fs-5'>Validator</p>
                                     </div>
                                     <div className='mx-5 mt-4'>
-                                        <Button className='btn-yellow fw-bold px-5 rounded-2'>
+                                        <Button className='btn-yellow fw-bold px-5 rounded-2 font-poppins'>
                                             Deposit
                                         </Button>
                                     </div>
                                     <div className='mt-4'>
-                                        <Button className='btn-grey fw-bold px-5 rounded-2'>
+                                        <Button className='btn-grey fw-bold px-5 rounded-2 font-poppins'>
                                             Withdraw
                                         </Button>
                                     </div>
