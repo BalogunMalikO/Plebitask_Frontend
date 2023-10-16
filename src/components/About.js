@@ -8,8 +8,8 @@ const About = ()=>{
     const navigate = useNavigate()
     return (
         <Fragment>
-            <div className='container'>                
-                <div className='d-flex justify-content-between pt-4'>
+            <div className='container px-md-0 px-4'>                
+                <div className='d-flex justify-content-between pt-4 flex-md-row flex-column'>
                     <p className='fw-bold fs-4 text-white'>About Plebitask</p>
                     <Button onClick={()=>navigate('/user/dashboard')} className='text-capitalize border border-yellow rounded-0 text-white px-4 fw-bold'>
                         Return to Dashboard
@@ -17,21 +17,21 @@ const About = ()=>{
                 </div>
                 {/* Banner */}
                 <div className='row banner rounded-4 my-4'>
-                    <div className='col-5 ps-4 pt-4'>
-                        <p className='text-white fw-bold fs-4 px-5 pt-5'>
+                    <div className='col-md-5 ps-md-4 pt-md-4'>
+                        <p className='text-white fw-bold fs-4 px-md-5 px-2 pt-md-5 pt-3'>
                             Perform tasks or create on Plebitask to earn sats.
                         </p>
-                        <Button className='btn-plebitask text-white px-4 fw-bold mx-5'>
+                        <Button className='btn-plebitask text-white px-4 fw-bold mx-md-5 mx-2'>
                             Get Started
                         </Button>
                     </div>
-                    <div className='col-7'>
-                        <img src={Banner} className='img-fluid' />
+                    <div className='col-md-7'>
+                        <img src={Banner} className='img-fluid mt-md-0 mt-3' />
                     </div>
                 </div>
                 {/* Banner */}
                 {/* Welcome */}
-                <div className='row btn-plebitask p-5 rounded-4'>
+                <div className='row btn-plebitask p-md-5 p-2 rounded-4'>
                     <div className='col-md-6'>
                         <img src={Amico} className='img-fluid' />
                     </div>
@@ -53,7 +53,7 @@ const About = ()=>{
                     <p className='text-white fs-4 fw-bold'>
                         How it works
                     </p>
-                    <div className='row w-100 row-cols-md-3 row-cols-1 g-4'>
+                    <div className='row w-100 row-cols-md-3 row-cols-1 g-4 mx-auto'>
                         <div className='col'>
                             <div className='card how-card rounded-4 p-3 h-100 shadow'>
                                 <div className='d-flex'>
