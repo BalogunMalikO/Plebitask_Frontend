@@ -7,9 +7,11 @@ import Verify from '../assets/verified.png'
 import BTC from '../assets/btc.png'
 import EditUser from '../assets/edit-user-02.png'
 import CoinBtc from '../assets/coins-bitcoin.png'
+import { useNavigate } from 'react-router';
 
 const Dashboard = ()=>{
     const [task, setTask] = useState([1,2,3,4,5,6])
+    const navigate = useNavigate()
     return (
         <Fragment>
             <div className='container'>
@@ -73,7 +75,7 @@ const Dashboard = ()=>{
                             <div className='trending-task mt-4'>
                                 <div className='d-flex justify-content-between'>
                                     <p className='text-white fw-bold fs-5'>Trending Task</p>
-                                    <Button className='text-white text-capitalize'>
+                                    <Button onClick={()=>navigate('/user/tasks')} className='text-white text-capitalize font-poppins'>
                                         View All Task
                                     </Button>
                                 </div>
