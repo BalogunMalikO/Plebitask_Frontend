@@ -12,7 +12,7 @@ const User = ()=>{
     return (
         <Fragment>
             <div className='user'>
-                <nav className="navbar navbar-expand-md navbar-light bg-navbar p-5">
+                <nav className="navbar navbar-expand-md navbar-light bg-navbar p-md-5 py-3">
                     <div className="container-fluid">
                         <a href='/' className='navbar-brand'>
                             <img  src={NavbarBrand} className="img-fluid"/>
@@ -34,7 +34,7 @@ const User = ()=>{
                                 <a className="nav-link text-white light-bold" href="#">Create Task</a>
                             </li>
                             <li className="nav-item px-md-2 menuItems">
-                                <a className="nav-link text-white light-bold" href="#">Task</a>
+                                <NavLink className="nav-link text-white light-bold" to={'/user/tasks'}>Task</NavLink>
                             </li>
                             <li className="nav-item px-md-2 menuItems">
                                 <NavLink className="nav-link text-white light-bold" to={'/user/about'}>About</NavLink>
@@ -42,31 +42,33 @@ const User = ()=>{
                             <li className="nav-item px-md-2">
                                 <a className="nav-link text-white light-bold" href="#shop">FAQ</a>
                             </li> 
-                            <li className='nav-item px-md-2'>
+                            <li className='nav-item px-md-2 d-md-block d-none'>
                                 <Button className='btn-plebitask text-white fw-bold'>
                                     Become Influencer
                                 </Button>
                             </li> 
-                            <li className="nav-item px-md-2">
-                                <IconButton>
-                                    <Search className='text-white' />
-                                </IconButton>
-                            </li>
-                            <li className="nav-item px-md-2">
-                                <IconButton>
-                                    <Notifications className='text-white' />
-                                </IconButton>
-                            </li>
-                            <li className="nav-item px-md-2">
-                                <IconButton>
-                                    <Person className='text-white' />
-                                </IconButton>
-                            </li>
-                            <li className="nav-item px-md-2">
-                                <IconButton>
-                                    <Logout className='text-white' />
-                                </IconButton>
-                            </li>                          
+                            <div className='d-flex'>
+                                <li className="nav-item px-md-2">
+                                    <IconButton>
+                                        <Search className='text-white' />
+                                    </IconButton>
+                                </li>
+                                <li className="nav-item px-md-2">
+                                    <IconButton>
+                                        <Notifications className='text-white' />
+                                    </IconButton>
+                                </li>
+                                <li className="nav-item px-md-2">
+                                    <IconButton>
+                                        <Person className='text-white' />
+                                    </IconButton>
+                                </li>
+                                <li className="nav-item px-md-2">
+                                    <IconButton>
+                                        <Logout className='text-white' />
+                                    </IconButton>
+                                </li>
+                            </div>                          
                         </ul>
                         </div>
                     </div>
