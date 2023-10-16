@@ -121,3 +121,6 @@ code {
   background-clip: text !important;
   -webkit-text-fill-color: transparent !important;
 }
+.bg-task {
+  background-color: #1B1D22 !important;
+}
