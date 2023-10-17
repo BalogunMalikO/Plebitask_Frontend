@@ -124,3 +124,35 @@ code {
 .bg-task {
   background-color: #1B1D22 !important;
 }
+.task-input {
+  background-color: #1B1D22 !important;
+  border-color: #1B1D22 !important;
+  color: white !important;
+}
+textarea::placeholder {
+  text-align: right;
+}
+.accordion {
+  --bs-accordion-btn-bg: inherit !important;
+  --bs-accordion-active-bg: inherit !important;
+  --bs-accordion-active-color: white !important;
+  --bs-accordion-btn-color: white !important;
+  --bs-accordion-btn-focus-box-shadow: none;
+}
+.accordion-item {
+  color: white !important;
+  background-color: inherit !important;
+}
+.accordion-button:not(.collapsed) {
+  box-shadow: none;
+  /* border: none !important; */
+}
+.accordion-button {
+  border-top: 1px solid #4A536A !important;
+}
+.accordion-button::after {
+  color: white !important;
+}
+.accordion-item:last-child .accordion-button {
+  border-bottom: 1px solid #455A64;
+}
