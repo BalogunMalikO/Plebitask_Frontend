@@ -21,7 +21,7 @@ const About = ()=>{
                         <p className='text-white fw-bold fs-4 px-md-5 px-2 pt-md-5 pt-3'>
                             Perform tasks or create on Plebitask to earn sats.
                         </p>
-                        <Button className='btn-plebitask text-white px-4 fw-bold mx-md-5 mx-2'>
+                        <Button onClick={()=>navigate('/user/create-task')} className='btn-plebitask text-white px-4 fw-bold mx-md-5 mx-2'>
                             Get Started
                         </Button>
                     </div>
