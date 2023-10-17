@@ -10,6 +10,8 @@ import User from './pages/User';
 import Dashboard from './components/Dashboard';
 import About from './components/About';
 import Tasks from './components/Tasks';
+import CreateTask from './components/CreateTask';
+import FrequentlyAsked from './components/FrequentlyAsked';
 
 function App() {
   return (
@@ -25,6 +27,8 @@ function App() {
             <Route path='/user/dashboard' element={<Dashboard />} />
             <Route  path='/user/about' element={<About />} />
             <Route path='/user/tasks' element={<Tasks />} />
+            <Route path='/user/create-task' element={<CreateTask />} />
+            <Route path='/user/faq' element={<FrequentlyAsked />} />
           </Route>
         </Routes>
       </BrowserRouter>
