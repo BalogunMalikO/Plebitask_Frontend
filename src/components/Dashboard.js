@@ -1,5 +1,4 @@
-import { Add, HeartBroken, MonitorHeart, Search, Settings, Star, ViewAgendaOutlined } from '@mui/icons-material';
-import { Button, IconButton } from '@mui/material';
+import { Button } from '@mui/material';
 import React, { useState, useEffect, Fragment } from 'react';
 import Banner from '../assets/banner-dash.png'
 import SecondPic from '../assets/second-pic.png'
@@ -8,6 +7,7 @@ import BTC from '../assets/btc.png'
 import EditUser from '../assets/edit-user-02.png'
 import CoinBtc from '../assets/coins-bitcoin.png'
 import { useNavigate } from 'react-router';
+import Sidenav from '../layouts/Sidenav';
 
 const Dashboard = ()=>{
     const [task, setTask] = useState([1,2,3,4,5,6])
@@ -16,44 +16,7 @@ const Dashboard = ()=>{
         <Fragment>
             <div className='container'>
                 <div className='row w-100 my-5 mx-auto'>
-                    <div className='col-md-1 px-2 bg-sidenav d-md-block d-none'>
-                        <div className='pt-4'>
-                            <div className='d-flex justify-content-center'>                                
-                                <IconButton className='sidenav-icon-bg p-3'>
-                                    <Search className='text-white' />
-                                </IconButton>
-                            </div>
-                            <div className='d-flex justify-content-center pt-4'>
-                                <IconButton className='sidenav-icon-bg p-3'>
-                                    <Add className='text-white' />
-                                </IconButton>
-                            </div>
-                            <div className='d-flex justify-content-center pt-4'>
-                                <IconButton className='sidenav-icon-bg p-3'>
-                                    <ViewAgendaOutlined className='text-white' />
-                                </IconButton>
-                            </div>
-                            <div className='d-flex justify-content-center pt-4'>
-                                <IconButton className='sidenav-icon-bg p-3'>
-                                    <Settings className='text-white' />
-                                </IconButton>
-                            </div>
-                        </div>
-                    </div>
-                    <div className='col-md-2 d-md-block d-none px-3'>
-                        <div className='bg-sidenav text-white p-3'>
-                            <p>Dashboard</p>
-                            <p>Profile</p>
-                            <p>Create Task</p>
-                            <p>Trending Task</p>
-                            <p>Saved</p>
-                            <p>Task History</p>
-                            <p>Wallet</p>
-                            <p>FAQ</p>
-                            <p>Referral Bonus</p>
-                            <p>Settings</p>
-                        </div>
-                    </div>
+                    <Sidenav />
                     <div className='col-md-9'>
                         <div className='px-md-4 px-1'>
                             {/* Banner */}
@@ -62,7 +25,7 @@ const Dashboard = ()=>{
                                     <p className='text-white fw-bold fs-4'>
                                         Perform tasks or create on Plebitask to earn sats.
                                     </p>
-                                    <Button className='btn-plebitask text-white px-4 fw-bold'>
+                                    <Button onClick={()=>navigate('/user/create-task')} className='btn-plebitask text-white px-4 fw-bold'>
                                         Get Started
                                     </Button>
                                 </div>
