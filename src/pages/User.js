@@ -31,7 +31,7 @@ const User = ()=>{
                         <div className="collapse navbar-collapse" id="navbarNav">
                         <ul className="navbar-nav ms-auto">
                             <li className="nav-item px-md-2 menuItems">
-                                <a className="nav-link text-white light-bold" href="#">Create Task</a>
+                                <NavLink className="nav-link text-white light-bold" to={'/user/create-task'}>Create Task</NavLink>
                             </li>
                             <li className="nav-item px-md-2 menuItems">
                                 <NavLink className="nav-link text-white light-bold" to={'/user/tasks'}>Task</NavLink>
@@ -40,7 +40,7 @@ const User = ()=>{
                                 <NavLink className="nav-link text-white light-bold" to={'/user/about'}>About</NavLink>
                             </li>
                             <li className="nav-item px-md-2">
-                                <a className="nav-link text-white light-bold" href="#shop">FAQ</a>
+                                <NavLink className="nav-link text-white light-bold" to={'/user/faq'}>FAQ</NavLink>
                             </li> 
                             <li className='nav-item px-md-2 d-md-block d-none'>
                                 <Button className='btn-plebitask text-white fw-bold'>
