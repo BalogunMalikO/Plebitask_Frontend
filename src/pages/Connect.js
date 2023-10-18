@@ -4,6 +4,7 @@ import Rafiki from '../assets/rafiki.png'
 import { Alert, Button, Snackbar } from '@mui/material';
 import { useNavigate } from 'react-router';
 import { NavLink } from 'react-router-dom';
+import { Download } from '@mui/icons-material';
 
 const Login = ()=>{
     const navigate = useNavigate()
@@ -17,7 +18,7 @@ const Login = ()=>{
                     sessionStorage.setItem('liquid_addr', JSON.stringify(res))
                     navigate('/set/display-name')
                   }).catch(err=>{
-                    setResponse('Unable to retrieve address')             
+                    setResponse('Unable to retrieve wallet address')             
                     setSnackbarStatus(true)
                 })
               }).catch(err=>{
@@ -25,7 +26,7 @@ const Login = ()=>{
                 setSnackbarStatus(true)
               })                                  
             }else {
-                setResponse('No Liquid Provider Available')             
+                setResponse('Install the Alby Extension on your Browser')             
                 setSnackbarStatus(true)
             }
           }
@@ -41,6 +42,9 @@ const Login = ()=>{
 
         setSnackbarStatus(false)
 
+    }
+    const downloadAlby = ()=>{
+        window.open('https://chrome.google.com/webstore/detail/alby-bitcoin-lightning-wa/iokeahhehimjnekafflcihljlcjccdbe')
     }
 
     return (
@@ -62,6 +66,9 @@ const Login = ()=>{
                             </p>
                             <Button onClick={connect} className='px-4 py-2 btn-plebitask text-white mt-1 mb-5 fw-bold'>
                                 Connect Wallet
+                            </Button>
+                            <Button onClick={downloadAlby} className='px-4 py-2 btn-yellow text-white mt-1 mb-5 fw-bold mx-3'>
+                            Alby Extension <Download /> 
                             </Button>
                         </div>
                     </div>
