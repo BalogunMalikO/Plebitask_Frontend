@@ -67,8 +67,8 @@ const Login = ()=>{
                             <Button onClick={connect} className='px-4 py-2 btn-plebitask text-white mt-1 mb-5 fw-bold'>
                                 Connect Wallet
                             </Button>
-                            <Button onClick={downloadAlby} className='px-4 py-2 btn-yellow text-white mt-1 mb-5 fw-bold mx-3'>
-                            Alby Extension <Download /> 
+                            <Button onClick={downloadAlby} className='px-4 py-2 btn-dark text-capitalize text-white mt-1 mb-5 fw-bold mx-3'>
+                               <Download className='me-2' /> Alby Extension
                             </Button>
                         </div>
                     </div>
